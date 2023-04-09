@@ -1,0 +1,30 @@
+{
+  "name": "saturdays",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "version-packages": "turbo run build lint test && changeset version",
+    "clean:all": "pnpm clean && rm -rf ./{{packages,apps}/*}/{node_modules} node_modules",
+    "clean": "rm -rf ./{{packages,apps}/*}/{dist,.svelte-kit,.turbo}",
+    "preinstall": "npx only-allow pnpm"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.1",
+    "eslint-config-custom": "workspace:*",
+    "prettier": "latest",
+    "turbo": "latest"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "packageManager": "pnpm@7.29.1",
+  "type": "module"
+}
