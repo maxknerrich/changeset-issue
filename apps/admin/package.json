@@ -8,6 +8,7 @@
 		"preview": "vite preview",
 		"postinstall": "pnpm run sync",
 		"test": "playwright test",
+		"types:db": "pnpx fetch-appwrite-types",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"test:unit": "vitest",
