@@ -5,6 +5,8 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "svelte-kit sync && && vite build",
+		"build:cap": "vite build",
+		"sync:app": "vite build && pnpm cap sync",
 		"preview": "vite preview",
 		"postinstall": "pnpm run sync",
 		"test": "playwright test",
@@ -15,8 +17,10 @@
 		"sync": "svelte-kit sync"
 	},
 	"devDependencies": {
+		"@capacitor/cli": "^5.0.2",
 		"@playwright/test": "^1.28.1",
 		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/adapter-static": "^2.0.2",
 		"@sveltejs/kit": "^1.5.0",
 		"@unocss/reset": "^0.51.12",
 		"eslint": "^8.28.0",
@@ -33,5 +37,11 @@
 		"vite": "^4.2.0",
 		"vitest": "^0.25.3"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@capacitor/android": "^5.0.2",
+		"@capacitor/app": "^5.0.2",
+		"@capacitor/core": "^5.0.2",
+		"@capacitor/ios": "^5.0.2"
+	}
 }
