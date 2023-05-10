@@ -3,7 +3,7 @@
     "projectName": "Saturdays",
     "databases": [
         {
-            "$id": "6454a1a09c337c05ac36",
+            "$id": "dev",
             "name": "Development",
             "$createdAt": "2023-05-05T06:26:40.640+00:00",
             "$updatedAt": "2023-05-05T06:26:40.640+00:00"
@@ -11,9 +11,9 @@
     ],
     "collections": [
         {
-            "$id": "645b6f805ce2716504fb",
+            "$id": "invitation",
             "$permissions": [],
-            "databaseId": "6454a1a09c337c05ac36",
+            "databaseId": "dev",
             "name": "Invitation",
             "enabled": true,
             "documentSecurity": false,
