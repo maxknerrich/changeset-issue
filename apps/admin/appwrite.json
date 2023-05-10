@@ -1,0 +1,57 @@
+{
+    "projectId": "saturdays",
+    "projectName": "Saturdays",
+    "databases": [
+        {
+            "$id": "6454a1a09c337c05ac36",
+            "name": "Development",
+            "$createdAt": "2023-05-05T06:26:40.640+00:00",
+            "$updatedAt": "2023-05-05T06:26:40.640+00:00"
+        }
+    ],
+    "collections": [
+        {
+            "$id": "645b6f805ce2716504fb",
+            "$permissions": [],
+            "databaseId": "6454a1a09c337c05ac36",
+            "name": "Invitation",
+            "enabled": true,
+            "documentSecurity": false,
+            "attributes": [
+                {
+                    "key": "status",
+                    "type": "string",
+                    "status": "available",
+                    "required": true,
+                    "array": false,
+                    "elements": [
+                        "sent",
+                        "redeemed",
+                        "created"
+                    ],
+                    "format": "enum",
+                    "default": null
+                },
+                {
+                    "key": "user",
+                    "type": "string",
+                    "status": "available",
+                    "required": false,
+                    "array": false,
+                    "size": 25,
+                    "default": null
+                },
+                {
+                    "key": "uuid",
+                    "type": "string",
+                    "status": "available",
+                    "required": true,
+                    "array": false,
+                    "size": 5,
+                    "default": null
+                }
+            ],
+            "indexes": []
+        }
+    ]
+}
