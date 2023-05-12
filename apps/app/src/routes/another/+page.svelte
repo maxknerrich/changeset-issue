@@ -1,3 +1,1 @@
-<h1>
-  Another page   
-</h1>
+<h1>Another page</h1>

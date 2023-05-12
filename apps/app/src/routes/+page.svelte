@@ -13,9 +13,6 @@
 		rounded="lg"
 	>
 		Button
-	<a 
-		href="/another"
-		>Go to another page</a>
+		<a href="/another">Go to another page</a>
 	</button>
 </div>
-
