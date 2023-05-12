@@ -3,17 +3,18 @@
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
-		"dev": "vite dev",
-		"build": "svelte-kit sync && && vite build",
-		"preview": "vite preview",
-		"postinstall": "pnpm run sync",
-		"test": "playwright test",
-		"types:db": "pnpx fetch-appwrite-types",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"build": "svelte-kit sync && vite build",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"test:unit": "vitest",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"dev": "vite dev",
+		"e2e": "playwright test",
 		"lint": "prettier --plugin-search-dir . --write . && eslint . --fix --debug",
-		"sync": "svelte-kit sync"
+		"postinstall": "pnpm run sync",
+		"preview": "vite preview",
+		"sync": "svelte-kit sync",
+		"test:watch": "vitest",
+		"test": "vitest run",
+		"types:db": "pnpx fetch-appwrite-types"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.28.1",
