@@ -65,54 +65,6 @@ importers:
         specifier: ^0.25.3
         version: 0.25.8
 
-  apps/admin-ui:
-    devDependencies:
-      '@playwright/test':
-        specifier: ^1.28.1
-        version: 1.32.2
-      '@sveltejs/adapter-auto':
-        specifier: ^2.0.0
-        version: 2.0.0_/sveltejs+kit@1.15.2
-      '@sveltejs/kit':
-        specifier: ^1.5.0
-        version: 1.15.2_svelte/3.58.0+vite@4.2.1
-      eslint:
-        specifier: ^8.28.0
-        version: 8.38.0
-      eslint-config-custom:
-        specifier: workspace:*
-        version: link:../../packages/eslint-config-custom
-      eslint-plugin-svelte3:
-        specifier: ^4.0.0
-        version: 4.0.0_a4ckjr7darsrglbip3svgxgxc4
-      prettier:
-        specifier: ^2.8.0
-        version: 2.8.7
-      prettier-plugin-svelte:
-        specifier: ^2.8.1
-        version: 2.10.0_ur5pqdgn24bclu6l6i7qojopk4
-      svelte:
-        specifier: ^3.54.0
-        version: 3.58.0
-      svelte-check:
-        specifier: ^3.0.1
-        version: 3.2.0_svelte/3.58.0
-      tsconfig:
-        specifier: workspace:*
-        version: link:../../packages/tsconfig
-      tslib:
-        specifier: ^2.4.1
-        version: 2.5.0
-      typescript:
-        specifier: ^5.0.0
-        version: 5.0.4
-      vite:
-        specifier: ^4.2.0
-        version: 4.2.1
-      vitest:
-        specifier: ^0.25.3
-        version: 0.25.8
-
   apps/app:
     dependencies:
       '@capacitor/android':
@@ -127,9 +79,6 @@ importers:
       '@capacitor/ios':
         specifier: ^5.0.2
         version: 5.0.2(@capacitor/core@5.0.2)
-      ios:
-        specifier: ^0.0.1
-        version: 0.0.1
     devDependencies:
       '@capacitor/cli':
         specifier: ^5.0.2
@@ -2166,16 +2115,6 @@ packages:
       svelte: 3.58.0
     dev: true
 
-  /eslint-plugin-svelte3@4.0.0_a4ckjr7darsrglbip3svgxgxc4:
-    resolution: {integrity: sha512-OIx9lgaNzD02+MDFNLw0GEUbuovNcglg+wnd/UY0fbZmlQSz7GlQiQ1f+yX0XvC07XPcDOnFcichqI3xCwp71g==}
-    peerDependencies:
-      eslint: '>=8.0.0'
-      svelte: ^3.2.0
-    dependencies:
-      eslint: 8.38.0
-      svelte: 3.58.0
-    dev: true
-
   /eslint-plugin-turbo@1.9.3(eslint@7.32.0):
     resolution: {integrity: sha512-ZsRtksdzk3v+z5/I/K4E50E4lfZ7oYmLX395gkrUMBz4/spJlYbr+GC8hP9oVNLj9s5Pvnm9rLv/zoj5PVYaVw==}
     peerDependencies:
@@ -2817,10 +2756,6 @@ packages:
       has: 1.0.3
       side-channel: 1.0.4
     dev: true
-
-  /ios@0.0.1:
-    resolution: {integrity: sha512-yhzNDf7dFMzay0eC+geyoDWUV335S17HiOQ3PumOhRn8SIFrjx6RhdVRs4dqCaw9emlhWPzuSk5o10ziUdOrWQ==}
-    dev: false
 
   /is-array-buffer@3.0.2:
     resolution: {integrity: sha512-y+FyyR/w8vfIRq4eQcM1EYgSTnmHXPqaF+IgzgraytCFq5Xh8lllDVmAZolPJiZttZLeFSINPYMaEJ7/vWUa1w==}
@@ -3632,22 +3567,6 @@ packages:
     dependencies:
       prettier: 2.8.8
       svelte: 3.58.0
-    dev: true
-
-  /prettier-plugin-svelte@2.10.0_ur5pqdgn24bclu6l6i7qojopk4:
-    resolution: {integrity: sha512-GXMY6t86thctyCvQq+jqElO+MKdB09BkL3hexyGP3Oi8XLKRFaJP1ud/xlWCZ9ZIa2BxHka32zhHfcuU+XsRQg==}
-    peerDependencies:
-      prettier: ^1.16.4 || ^2.0.0
-      svelte: ^3.2.0
-    dependencies:
-      prettier: 2.8.7
-      svelte: 3.58.0
-    dev: true
-
-  /prettier@2.8.7:
-    resolution: {integrity: sha512-yPngTo3aXUUmyuTjeTUT75txrf+aMh9FiD7q9ZE/i6r0bPb22g4FsE6Y338PQX1bmfy08i9QQCB7/rcUAVntfw==}
-    engines: {node: '>=10.13.0'}
-    hasBin: true
     dev: true
 
   /prettier@2.8.8:
@@ -4560,39 +4479,6 @@ packages:
     dependencies:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
-    dev: true
-
-  /vite@4.2.1:
-    resolution: {integrity: sha512-7MKhqdy0ISo4wnvwtqZkjke6XN4taqQ2TBaTccLIpOKv7Vp2h4Y+NpmWCnGDeSvvn45KxvWgGyb0MkHvY1vgbg==}
-    engines: {node: ^14.18.0 || >=16.0.0}
-    hasBin: true
-    peerDependencies:
-      '@types/node': '>= 14'
-      less: '*'
-      sass: '*'
-      stylus: '*'
-      sugarss: '*'
-      terser: ^5.4.0
-    peerDependenciesMeta:
-      '@types/node':
-        optional: true
-      less:
-        optional: true
-      sass:
-        optional: true
-      stylus:
-        optional: true
-      sugarss:
-        optional: true
-      terser:
-        optional: true
-    dependencies:
-      esbuild: 0.17.15
-      postcss: 8.4.21
-      resolve: 1.22.2
-      rollup: 3.20.2
-    optionalDependencies:
-      fsevents: 2.3.2
     dev: true
 
   /vite@4.2.1(@types/node@18.15.11):
