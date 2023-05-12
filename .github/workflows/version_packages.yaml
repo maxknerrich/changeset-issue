@@ -21,3 +21,5 @@ jobs:
       - uses: changesets/action@v1
         with:
           version: pnpm run version-packages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
