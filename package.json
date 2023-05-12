@@ -8,17 +8,17 @@
 	],
 	"scripts": {
 		"build": "turbo run build",
-		"dev": "turbo run dev",
-		"lint": "turbo run lint",
 		"check": "turbo run check",
-		"test": "turbo run test",
-		"test:watch": "turbo run test:watch",
-		"e2e": "turbo run e2e",
-		"format": "prettier --write \"**/*.{ts,tsx,md}\"",
-		"version-packages": "turbo run build lint test && changeset version",
 		"clean:all": "pnpm clean && rm -rf ./{{packages,apps}/*}/{node_modules} node_modules",
 		"clean": "rm -rf ./{{packages,apps}/*}/{dist,.svelte-kit,.turbo}",
-		"preinstall": "npx only-allow pnpm"
+		"dev": "turbo run dev",
+		"e2e": "turbo run e2e",
+		"format": "prettier --write \"**/*.{ts,tsx,md}\"",
+		"lint": "turbo run lint",
+		"preinstall": "npx only-allow pnpm",
+		"test:watch": "turbo run test:watch",
+		"test": "turbo run test",
+		"version-packages": "changeset version && changeset tag"
 	},
 	"devDependencies": {
 		"@changesets/cli": "^2.26.1",
