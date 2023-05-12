@@ -1,17 +1,50 @@
 {
-  "$schema": "https://turbo.build/schema.json",
-  "globalDependencies": ["**/.env.*local"],
-  "globalEnv": ["APPWRITE_API_KEY", "APPWRITE_ENDPOINT", "APPWRITE_PROJECT_ID", "APPWRITE_DATABASE_ID"],
-  "pipeline": {
-    "build": {
-      "dependsOn": ["^build"],
-      "outputs": ["dist/**", ".next/**", "!.next/cache/**"]
-    },
-    "lint": {
-      "outputs": []
-    },
-    "dev": {
-      "cache": false
-    }
-  }
+	"$schema": "https://turbo.build/schema.json",
+	"globalDependencies": ["**/.env.*local"],
+	"globalEnv": [
+		"APPWRITE_API_KEY",
+		"APPWRITE_ENDPOINT",
+		"APPWRITE_PROJECT_ID",
+		"APPWRITE_DATABASE_ID"
+	],
+	"pipeline": {
+		"build": {
+			"dependsOn": ["^build"],
+			"outputs": ["dist/**", ".sveltekit/**"]
+		},
+		"lint": {
+			"outputs": []
+		},
+		"dev": {
+			"cache": false,
+			"persistent": true
+		},
+		"check": {},
+		"test": {
+			"inputs": [
+				"src/**/*.svelte",
+				"src/**/*.ts",
+				"tests/**/*.ts",
+				"tests/**/*.svelte"
+			]
+		},
+		"test:watch": {
+			"inputs": [
+				"src/**/*.svelte",
+				"src/**/*.ts",
+				"tests/**/*.ts",
+				"tests/**/*.svelte"
+			],
+			"cache": false
+		},
+		"e2e": {
+			"dependsOn": ["^build"],
+			"inputs": [
+				"src/**/*.svelte",
+				"src/**/*.ts",
+				"tests/**/*.ts",
+				"tests/**/*.svelte"
+			]
+		}
+	}
 }
