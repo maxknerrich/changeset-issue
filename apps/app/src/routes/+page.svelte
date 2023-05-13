@@ -1,7 +1,4 @@
-<h1 class="text-blue-400 font-bold text-4xl">Welcome to SvelteKit</h1>
-<p>
-	Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
-</p>
+<h1 class="text-gray-800 font-bold mb-6 text-4xl">Welcome to SvelteKit</h1>
 
 <div>
 	<button
@@ -13,6 +10,6 @@
 		rounded="lg"
 	>
 		Button
-		<a href="/another">Go to another page</a>
+		<a href="/home">Go to Home</a>
 	</button>
 </div>
