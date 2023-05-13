@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+  pull_request:
+
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    name: Lint
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - uses: ./.github/actions/setup-deps
+
+      - name: Lint
+        run: pnpm run lint
+
+  typescript:
+    name: Typescript
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - uses: ./.github/actions/setup-deps
+
+      - name: Typescript
+        run: pnpm run check
+
+  test:
+    name: Unit Test
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - uses: ./.github/actions/setup-deps
+
+      - name: Unit tests
+        run: pnpm test
