@@ -1,0 +1,11 @@
+{
+	"name": "unocss-config",
+	"version": "0.0.0",
+	"private": true,
+	"publishConfig": {
+		"access": "public"
+	},
+	"devDependencies": {
+		"unocss": "^0.51.12"
+	}
+}
