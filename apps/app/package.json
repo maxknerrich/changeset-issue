@@ -29,6 +29,7 @@
 		"@unocss/reset": "^0.51.12",
 		"eslint": "^8.28.0",
 		"eslint-config-custom": "workspace:*",
+		"unocss-config": "workspace:*",
 		"eslint-plugin-svelte3": "^4.0.0",
 		"prettier": "^2.8.0",
 		"prettier-plugin-svelte": "^2.8.1",

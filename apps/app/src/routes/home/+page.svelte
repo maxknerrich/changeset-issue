@@ -1,8 +1,8 @@
 <script>
-	import Card from '../../components/home/card.svelte';
-	import EventColumn from '../../components/home/eventColumn.svelte';
-	import Topcard from '../../components/home/topcard.svelte';
-	import Topbar from '../../components/layout/topbar.svelte';
+	import Card from '$components/home/card.svelte';
+	import EventColumn from '$components/home/eventColumn.svelte';
+	import Topcard from '$components/home/topcard.svelte';
+	import Topbar from '$components/layout/topbar.svelte';
 </script>
 
 <Topbar />
