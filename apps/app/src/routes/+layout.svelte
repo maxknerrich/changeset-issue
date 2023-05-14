@@ -1,7 +1,7 @@
 <script>
 	import '@unocss/reset/tailwind.css';
 	import 'uno.css';
-	import BottomNav from '../components/layout/bottomNav.svelte';
+	import BottomNav from '$components/layout/bottomNav.svelte';
 </script>
 
 <div />
@@ -12,5 +12,3 @@
 	</div>
 	<BottomNav />
 </main>
-
-
