@@ -41,6 +41,6 @@
 
 <style>
 	.own-shadow {
-		box-shadow: 0px 0px 25px 17px #000000;
+		box-shadow: 0px 0px 40px 30px #000000;
 	}
 </style>
