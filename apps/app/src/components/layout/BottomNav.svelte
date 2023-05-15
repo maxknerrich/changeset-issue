@@ -34,7 +34,7 @@
 		class="flex text-white bg-standard-600 rounded-40 font-bold py-4 px-5 border border-standard-500 w-full justify-between items-center"
 	>
 		{#each NavItems as { href, icon, title }, i}
-			<BottomNavItem active={href == activeHref} {href} {icon} {title} />
+			<BottomNavItem active={href === activeHref} {href} {icon} {title} />
 		{/each}
 	</div>
 </div>
