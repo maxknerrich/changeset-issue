@@ -18,6 +18,10 @@
 	}
 
 	const pagesWithNav = ['/', '/rewards', '/checkin', '/partner'];
+
+	if (Capacitor.isNativePlatform()) {
+		window.screen.orientation.lock('portrait');
+	}
 </script>
 
 <div />

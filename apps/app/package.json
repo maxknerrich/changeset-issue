@@ -29,7 +29,6 @@
 		"@unocss/reset": "^0.51.12",
 		"eslint": "^8.28.0",
 		"eslint-config-custom": "workspace:*",
-		"unocss-config": "workspace:*",
 		"eslint-plugin-svelte3": "^4.0.0",
 		"prettier": "^2.8.0",
 		"prettier-plugin-svelte": "^2.8.1",
@@ -39,6 +38,7 @@
 		"tslib": "^2.4.1",
 		"typescript": "^5.0.0",
 		"unocss": "^0.51.12",
+		"unocss-config": "workspace:*",
 		"vite": "^4.2.0",
 		"vitest": "^0.25.3"
 	},
@@ -47,6 +47,7 @@
 		"@capacitor/android": "^5.0.2",
 		"@capacitor/app": "^5.0.2",
 		"@capacitor/core": "^5.0.2",
-		"@capacitor/ios": "^5.0.2"
+		"@capacitor/ios": "^5.0.2",
+		"cordova-plugin-screen-orientation": "^3.0.3"
 	}
 }
