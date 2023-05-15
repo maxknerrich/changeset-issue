@@ -12,7 +12,7 @@
 <table>
 	{#each invitations as invitation}
 		<tr>
-			<td>{invitation.uuid}</td>
+			<td>{invitation.$id}</td>
 			<td>{invitation.status}</td>
 		</tr>
 	{/each}
