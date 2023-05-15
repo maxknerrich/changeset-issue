@@ -1,5 +1,6 @@
 <script lang="ts">
 	import BottomNavItem from './bottomNavItem.svelte';
+	import { page } from '$app/stores';
 
 	const NavItems = [
 		{
@@ -24,11 +25,8 @@
 		},
 	];
 
-	let activeItem = 0;
+	$: activeHref = $page.url.pathname;
 
-	function setActiveItem(index: number) {
-		activeItem = index;
-	}
 </script>
 
 <div class="px-2 sticky bottom-3">
@@ -37,8 +35,7 @@
 	>
 		{#each NavItems as { href, icon, title }, i}
 			<BottomNavItem
-				onClick={() => setActiveItem(i)}
-				active={i == activeItem}
+				active={href == activeHref}
 				{href}
 				{icon}
 				{title}

@@ -5,12 +5,11 @@
 	export let icon: string;
 	export let title: string;
 	export let active: boolean = false;
-	export let onClick: () => void;
 
 	$: background = active ? 'bg-standard-500' : '';
 </script>
 
-<a {href} on:click={onClick}>
+<a {href}>
 	<div
 		class={'flex outline-none items-center gap-2 rounded-3xl py-2 px-4 ' +
 			background}
