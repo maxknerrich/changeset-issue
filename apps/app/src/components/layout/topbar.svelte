@@ -7,10 +7,10 @@
 		<h2 class="font-bold text-white text-3xl">Saturdays</h2>
 	{:else}
 		<button
-			class="text-white font-semibold flex items-center justify-center gap-4"
+			class="text-white font-semibold flex items-center justify-center gap-1"
 			on:click={() => window.history.back()}
 		>
-			<div class="i-system-uicons-chevron-left" />
+			<div class="w-4 h-4 i-system-uicons-chevron-left" />
 			Back
 		</button>
 	{/if}

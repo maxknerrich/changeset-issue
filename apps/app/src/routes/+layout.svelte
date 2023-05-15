@@ -4,6 +4,7 @@
 	import BottomNav from '$components/layout/bottomNav.svelte';
 	import { App as CapacitorApp } from '@capacitor/app';
 	import { Capacitor } from '@capacitor/core';
+	import { page } from '$app/stores';
 
 	// Go Back on Native Back Button
 	if (Capacitor.isNativePlatform()) {
@@ -15,6 +16,8 @@
 			}
 		});
 	}
+
+	const pagesWithNav = ['/', '/rewards', '/checkin', '/partner'];
 </script>
 
 <div />
@@ -23,5 +26,7 @@
 	<div id="container" class="p-6 min-h-screen">
 		<slot />
 	</div>
-	<BottomNav />
+	{#if pagesWithNav.includes($page.url.pathname)}
+		<BottomNav />
+	{/if}
 </main>
