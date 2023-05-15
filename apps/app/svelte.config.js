@@ -8,6 +8,7 @@ const config = {
 	kit: {
 		alias: {
 			$components: './src/components',
+			$assets: './src/assets',
 		},
 		adapter: adapter({
 			pages: 'build',

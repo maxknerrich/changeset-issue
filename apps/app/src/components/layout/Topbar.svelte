@@ -1,10 +1,11 @@
 <script lang="ts">
 	export let logo: boolean = true;
+	import saturdays from '$assets/saturdayslogo.png';
 </script>
 
-<div class="flex justify-between items-center">
+<div class="flex mb-8 justify-between items-center">
 	{#if logo}
-		<h2 class="font-bold text-white text-3xl">Saturdays</h2>
+		<img class="h-13" src={saturdays} alt="saturdays" />
 	{:else}
 		<button
 			class="text-white font-semibold flex items-center justify-center gap-1"
