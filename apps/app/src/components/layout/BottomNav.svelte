@@ -1,5 +1,5 @@
 <script lang="ts">
-	import BottomNavItem from './bottomNavItem.svelte';
+	import BottomNavItem from './BottomNavItem.svelte';
 	import { page } from '$app/stores';
 
 	const NavItems = [

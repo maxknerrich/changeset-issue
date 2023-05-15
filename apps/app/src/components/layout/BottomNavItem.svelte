@@ -20,9 +20,3 @@
 		{/if}
 	</div>
 </a>
-
-<style>
-	a {
-		-webkit-tap-highlight-color: transparent;
-	}
-</style>

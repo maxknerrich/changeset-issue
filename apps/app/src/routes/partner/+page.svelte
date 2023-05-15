@@ -1,5 +1,5 @@
 <script>
-	import Topbar from '$components/layout/topbar.svelte';
+	import Topbar from '$components/layout/Topbar.svelte';
 </script>
 
 <Topbar />

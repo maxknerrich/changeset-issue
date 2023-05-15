@@ -1,7 +1,7 @@
 <script>
 	import '@unocss/reset/tailwind.css';
 	import 'uno.css';
-	import BottomNav from '$components/layout/bottomNav.svelte';
+	import BottomNav from '$components/layout/BottomNav.svelte';
 	import { App as CapacitorApp } from '@capacitor/app';
 	import { Capacitor } from '@capacitor/core';
 	import { page } from '$app/stores';
@@ -34,3 +34,9 @@
 		<BottomNav />
 	{/if}
 </main>
+
+<style>
+	:global(a, button, select, input, textarea) {
+		-webkit-tap-highlight-color: transparent;
+	}
+</style>

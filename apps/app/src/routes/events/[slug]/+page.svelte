@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Topbar from '$components/layout/topbar.svelte';
-	import EventCard from '$components/event/eventCard.svelte';
+	import Topbar from '$components/layout/Topbar.svelte';
+	import EventCard from '$components/event/EventCard.svelte';
 	import type { PageData } from './$types';
 	import DjColumn from '$components/event/DJColumn.svelte';
 	import SecretPhraseReveal from '$components/event/SecretPhraseReveal.svelte';
