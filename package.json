@@ -18,6 +18,7 @@
 		"preinstall": "npx only-allow pnpm",
 		"test:watch": "turbo run test:watch",
 		"test": "turbo run test",
+		"types:db": "pnpx fetch-appwrite-types",
 		"version-packages": "changeset version && changeset tag"
 	},
 	"devDependencies": {
