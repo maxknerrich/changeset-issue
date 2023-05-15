@@ -12,7 +12,7 @@
 
 <a {href} on:click={onClick}>
 	<div
-		class={'flex items-center transition-all gap-2 rounded-3xl py-2 px-4 ' +
+		class={'flex outline-none items-center gap-2 rounded-3xl py-2 px-4 ' +
 			background}
 	>
 		<div class={'w-6 h-6 ' + icon} />
@@ -21,3 +21,9 @@
 		{/if}
 	</div>
 </a>
+
+<style>
+	a {
+		-webkit-tap-highlight-color: transparent;
+	}
+</style>
