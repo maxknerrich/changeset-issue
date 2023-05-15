@@ -83,6 +83,9 @@ importers:
       '@capacitor/ios':
         specifier: ^5.0.2
         version: 5.0.2(@capacitor/core@5.0.2)
+      cordova-plugin-screen-orientation:
+        specifier: ^3.0.3
+        version: 3.0.3
     devDependencies:
       '@capacitor/cli':
         specifier: ^5.0.2
@@ -1831,6 +1834,11 @@ packages:
     resolution: {integrity: sha512-YZ3GUyn/o8gfKJlnlX7g7xq4gyO6OSuhGPKaaGssGB2qgDUS0gPgtTvoyZLTt9Ab6dC4hfc9dV5arkvc/OCmrw==}
     engines: {node: '>= 0.6'}
     dev: true
+
+  /cordova-plugin-screen-orientation@3.0.3:
+    resolution: {integrity: sha512-Dt8lO8BECZfE/pKbYQZ72Wr811fYMScxw7c9v/gJ3etOPCBrgl8xIHOOZu4nY2ehRyxFPtZi3VeGvIG+3DZoZQ==}
+    engines: {cordovaDependencies: {4.0.0: {cordova: '>100'}}}
+    dev: false
 
   /cross-spawn@5.1.0:
     resolution: {integrity: sha512-pTgQJ5KC0d2hcY8eyL1IzlBPYjTkyH72XRZPnLyKus2mBfNjQs3klqbJU2VILqZryAZUt9JOb3h/mWMy23/f5A==}
